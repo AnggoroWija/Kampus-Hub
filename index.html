@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading {
+            background-color: darkgreen;
+            color: white;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+        #article {
+            background-color: lightgray;
+            width: 97%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: 0.1s all linear;
+        }
+        #article:hover {
+            background-color: darkgray;
+            transform: scale(1.02);
+        }
+        #style {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-family: sans-serif;
+        }
+        #footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        #nav {
+            padding: 10px;
+            border-bottom: 2px dashed black;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+    <body> 
+    <div id="style">
+
+        <header>
+           
+           <div id="heading">
+               
+               <h2><b>KampusHub</b></h2>
+               <p><b>Papan Pengumuman UNIWA</b></p>
+            </div>
+            <nav id="nav">
+                <a href="index.html">Beranda</a> |
+                <a href="about.html">About</a> |
+            </nav>
+            
+        </header>
+        <main>
+            
+            <h1>Pengumuman Terbaru</h1>
+            <p>Cari halaman</p> <input type="text" name="cari" id="cari">
+                <input type="button" value="Cari">
+            
+            <div id="article_wrapped">
+                <article id="article">
+                <h2>Judul Pengumuman 1</h2>
+                <p>Dikabarkan seorang mahasiswa sedang kuliah jam 21:00 di Fakultas Teknik</p>
+            </article>
+            
+            <article id="article">
+                <h2>Judul Pengumuman 2</h2>
+                <p>Mulai Tahun 2030, beasiswa naik 100% dari tahun sebelumnya</p>
+            </article>
+            
+            <article id="article">
+                <h2>Judul Pengumuman 3</h2>
+                <p>Alat baru telah ditambahkan di Ruangan UKM</p>
+            </article>
+            </div>
+        </main>
+        <h3>Tentang Web Ini</h3>
+        
+        <section>
+            
+        </section>
+        
+        <footer id="footer">
+            Pemrograman Web - 2026 - [M. Anggoro Wijaya / 20252210174]
+        </footer>
+        </div>
+    </body>
+</html>
