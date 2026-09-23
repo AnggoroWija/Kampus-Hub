@@ -1,0 +1,64 @@
+
+#style1 {
+    padding: 15px;
+    font-family: sans-serif;
+    #heading {
+            background-color: darkgreen;
+            color: white;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+        #nav {
+            padding: 10px;
+            border-bottom: 2px dashed black;
+        }
+        .article {
+            background-color: lightgray;
+            width: 97%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: 0.1s all linear;
+        }
+        .article:hover {
+            background-color: darkgray;
+            transform: scale(1.02);
+        }
+        }
+        a {
+            text-decoration: none;
+        }
+        .list-mhs {
+            list-style: none;
+            padding: 0;
+        }
+        .item-mhs {
+            padding: 8px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+            cursor: pointer;
+            background: #f9f9f9
+        }
+        .item-mhs:hover {background: #5d5d5d2d}
+
+        #detailbox {
+            margin-top: 15px;
+            padding: 15px;
+            border: 2px solid darkgreen;
+            border-radius: 8px;
+            background-color: #f0fff0;
+        }
+        #footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 4px;
+        }

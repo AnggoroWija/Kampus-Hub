@@ -1,4 +1,4 @@
-export const mahasiwa = [
+ const mahasiswa = [
     {
     nama: "Muhammad Anggoro Wijaya",
     prodi: "Teknik Informatika",
@@ -25,3 +25,5 @@ export const mahasiwa = [
     nilai: "4",
 },
 ];
+
+export default mahasiswa;
