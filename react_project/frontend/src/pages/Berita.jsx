@@ -7,7 +7,6 @@ export default function Berita() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    console.log("Memulai fetch ke JSONPlaceholder...");
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then((res) => {
         if (!res.ok) {

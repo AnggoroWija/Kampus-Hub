@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import '../index.css'; 
-import mahasiswa from '../data'; 
+import '../index.css';
+import mahasiswa from '../data';
 
 function Beranda() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -14,29 +14,29 @@ function Beranda() {
     <div id="style2">
       <div id="style1">
         <main>
-          <h1>Pengumuman Terbaru</h1>
+          <h1>Pengumuman Penting & Terbaru</h1>
           <p>Cari mahasiswa:</p>
-          <input 
-            type="text" 
-            name="cari" 
-            id="cari" 
+          <input
+            type="text"
+            name="cari"
+            id="cari"
             placeholder="masukkan nama mahasiswa..."
             value={searchQuery}
             onChange={(e) => {
               setSearchQuery(e.target.value);
-              setSelectedMahasiswa(null); 
+              setSelectedMahasiswa(null);
             }}
           />
-          
+
           {searchQuery !== "" && (
             <ul id="list-hasil" className="list-mhs">
               {hasilFilter.length > 0 ? (
                 hasilFilter.map((mhs, index) => (
-                  <li 
-                    key={index} 
-                    className="item-mhs" 
+                  <li
+                    key={index}
+                    className="item-mhs"
                     onClick={() => setSelectedMahasiswa(mhs)}
-                    style={{ cursor: 'pointer' }} 
+                    style={{ cursor: 'pointer' }}
                   >
                     {mhs.nama}
                   </li>
@@ -59,18 +59,18 @@ function Beranda() {
               </div>
             </div>
           )}
-          
+
           <div id="article_wrapped">
             <article className="article">
               <h2>Judul Pengumuman 1</h2>
               <p>Dikabarkan seorang mahasiswa sedang kuliah jam 21:00 di Fakultas Teknik</p>
             </article>
-            
+
             <article className="article">
               <h2>Judul Pengumuman 2</h2>
               <p>Mulai Tahun 2030, beasiswa naik 100% dari tahun sebelumnya</p>
             </article>
-            
+
             <article className="article">
               <h2>Judul Pengumuman 3</h2>
               <p>Alat baru telah ditambahkan di Ruangan UKM</p>
@@ -83,7 +83,7 @@ function Beranda() {
           <p>KampusHub adalah platform papan pengumuman digital resmi Universitas WA (UNIWA) untuk mempermudah sirkulasi informasi akademik.</p>
         </section>
       </div>
-      
+
       <footer id="footer">
         Pemrograman Web - 2026 - [M. Anggoro Wijaya / 20252210174]
       </footer>
