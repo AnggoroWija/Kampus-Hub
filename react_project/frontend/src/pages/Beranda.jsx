@@ -7,7 +7,7 @@ function Beranda() {
   const [selectedMahasiswa, setSelectedMahasiswa] = useState(null);
 
   const hasilFilter = mahasiswa.filter((mhs) =>
-    mhs.nama.toLowerCase().includes(searchQuery.toLowerCase())
+    !mhs.nama.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (

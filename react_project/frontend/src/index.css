@@ -62,3 +62,15 @@ a {
     border-radius: 4px;
 }
 
+
+@media (max-width: 700px) {
+    #heading,
+    #nav,
+    main,
+    #footer {
+        white-space: nowrap;
+    }
+    #style1 {
+        width: fit-content;
+    }
+}

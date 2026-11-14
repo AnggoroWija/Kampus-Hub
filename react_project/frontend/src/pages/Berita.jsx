@@ -9,7 +9,7 @@ export default function Berita() {
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then((res) => {
-        if (!res.ok) {
+        if (res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
         }
         return res.json();
